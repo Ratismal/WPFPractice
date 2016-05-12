@@ -20,11 +20,6 @@ namespace EncryptionForFunUI
 
         }
 
-        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void decrypt_DecryptButton_Click(object sender, RoutedEventArgs e)
         {
 
