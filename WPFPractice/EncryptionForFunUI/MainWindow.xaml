@@ -61,10 +61,10 @@
                     </Grid.RowDefinitions>
 
                     <Label Grid.Row="0" Grid.Column="0" Content="Public Key" />
-                    <Button Width="auto" Content="Load from file.." Grid.Row="0" Grid.Column="1"/>
+                    <Button Width="auto" Content="Load from file.." Name="encrypt_LoadPublicKey" Click="encrypt_LoadPublicKey_Click" Grid.Row="0" Grid.Column="1"/>
                     <TextBox Name="encrypt_public_key"  Height="auto" Grid.Row="1" Grid.ColumnSpan="2"/>
                     <Label Grid.Row="2" Grid.Column="0" Content="Plain Text" />
-                    <Button Width="auto" Content="Load from file.." Grid.Row="2" Grid.Column="1"/>
+                    <Button Width="auto" Content="Load from file.." Name="encrypt_LoadPlainText" Click="encrypt_LoadPlainText_Click" Grid.Row="2" Grid.Column="1"/>
                     <TextBox Name="encrypt_plain_text" Grid.Row="3" Grid.ColumnSpan="2" />
                     <Button Name="Encrypt_EncryptButton" Click="Encrypt_EncryptButtonClick_Click" Grid.Row="4" Grid.ColumnSpan="2" Content="Encrypt Text"/>
                     <Label Grid.Row="5" Grid.Column="0" Content="Cypher (Output)" />
@@ -95,15 +95,15 @@
                     </Grid.RowDefinitions>
 
                     <Label Grid.Row="0" Grid.Column="0" Content="Private Key" />
-                    <Button Width="auto" Content="Load from file.." Grid.Row="0" Grid.Column="1"/>
+                    <Button Width="auto" Content="Load from file.." Name="decrypt_LoadPrivateKey" Click="decrypt_LoadPrivateKey_Click" Grid.Row="0" Grid.Column="1"/>
                     <TextBox Name="decrypt_private_key"  Height="auto" Grid.Row="1" Grid.ColumnSpan="2"/>
                     <Label Grid.Row="2" Grid.Column="0" Content="Cypher Text" />
-                    <Button Width="auto" Content="Load from file.." Grid.Row="2" Grid.Column="1"/>
-                    <TextBox Name="decrypt_plain_text" Grid.Row="3" Grid.ColumnSpan="2" />
+                    <Button Width="auto" Content="Load from file.." Name="decrypt_LoadCypherText" Click="decrypt_LoadCypherText_Click" Grid.Row="2" Grid.Column="1"/>
+                    <TextBox Name="decrypt_cypher" Grid.Row="3" Grid.ColumnSpan="2" />
                     <Button Name="decrypt_DecryptButton" Click="decrypt_DecryptButton_Click" Grid.Row="4" Grid.ColumnSpan="2" Content="Decrypt Text"/>
                     <Label Grid.Row="5" Grid.Column="0" Content="Plain Text (Output)" />
                     <Button Grid.Row="5" Grid.Column="1" Width="auto" Content="Save Plain Text.."/>
-                    <TextBox Grid.Row="6" Grid.ColumnSpan="2" Name="decrypt_cypher" />
+                    <TextBox Grid.Row="6" Grid.ColumnSpan="2" Name="decrypt_plain_text" />
 
                 </Grid>
             </TabItem>
